@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  POC
 //
 //  Created by Bruno Vieira on 23/12/19.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, Storyboarded {
-    weak var coordinator: MainCoordinator?
+class FirstViewController: UIViewController, Storyboarded {
+    weak var coordinator: FirstCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "First"
         // Do any additional setup after loading the view.
     }
 

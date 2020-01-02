@@ -11,20 +11,18 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var coordinator: MainCoordinator?
     var window: UIWindow?
-//    private lazy var applicationCoordinator: Coordinator? = makeAppCoordinator()
+    private var applicationCoordinator: Coordinator?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let navController = UINavigationController()
-        coordinator = MainCoordinator(navigationController: navController)
-        coordinator?.start()
+        applicationCoordinator = AppCoordinator(navigationController: navController)
+        applicationCoordinator?.start()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
-        //        setupApplication()
         return true
     }
 
@@ -37,24 +35,19 @@ private extension AppDelegate {
         return self.window!.rootViewController as! UINavigationController
     }
     
-    func setupApplication() {
-    
-        UIView.setAnimationsEnabled(!isRunningUITests)
-        
-        if isRunningUnitTests && !isRunningUITests {
-            window = UIWindow()
-            window?.rootViewController = UIViewController()
-            window?.makeKeyAndVisible()
-        } else {
-            // Start App Coordinator
+//    func setupApplication() {
+//    
+//        UIView.setAnimationsEnabled(!isRunningUITests)
+//        
+//        if isRunningUnitTests && !isRunningUITests {
+//            window = UIWindow()
+//            window?.rootViewController = UIViewController()
+//            window?.makeKeyAndVisible()
+//        } else {
+//            // Start App Coordinator
 //            applicationCoordinator?.start()
-        }
-    }
-    
-//    private func makeAppCoordinator() -> Coordinator? {
-//        return AppCoordinator.build(window: window)
+//        }
 //    }
-    
 }
 
 private extension AppDelegate {
