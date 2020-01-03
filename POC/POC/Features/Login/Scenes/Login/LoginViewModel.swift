@@ -8,21 +8,7 @@
 
 import Foundation
 
-protocol LoginViewModelProtocol: LoginViewModelDisplayLogic, LoginViewModelBusinessLogic {}
-
-protocol LoginViewModelDisplayLogic {
-    func onViewDidLoad()
-}
-
-protocol LoginViewModelBusinessLogic {
-    func login()
-}
-
-protocol LoginViewModelBinding: AnyObject {
-    
-}
-
-class LoginViewModel: LoginViewModelProtocol {
+final class LoginViewModel {
     
     private let coordinator: LoginCoordinatorProtocol
     private let requestLoginUseCase: RequestLoginUseCaseProtocol
@@ -37,17 +23,20 @@ class LoginViewModel: LoginViewModelProtocol {
     
 }
 
-extension LoginViewModel: LoginViewModelBinding {
+// MARK: Binding
+extension LoginViewModel {
     
 }
 
-extension LoginViewModel: LoginViewModelDisplayLogic {
+// MARK: Display Logic
+extension LoginViewModel {
     func onViewDidLoad() {
         
     }
 }
 
-extension LoginViewModel: LoginViewModelBusinessLogic {
+// MARK: Business Logic
+extension LoginViewModel {
     func login() {
         requestLoginUseCase.execute()
         coordinator.enterApp()

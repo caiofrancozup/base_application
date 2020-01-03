@@ -8,12 +8,25 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, Storyboarded {
-    weak var coordinator: FirstCoordinator?
+class FirstViewController: UIViewController {
+    
+    private var viewModel: FirstViewModel?
 
+    init(
+        with viewModel: FirstViewModel
+    ) {
+        self.viewModel = viewModel
+        super.init(nibName: "FirstView", bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "First"
+        navigationItem.title = "First"
         // Do any additional setup after loading the view.
     }
 

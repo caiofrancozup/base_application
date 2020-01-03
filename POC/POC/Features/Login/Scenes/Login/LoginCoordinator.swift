@@ -13,13 +13,17 @@ protocol LoginCoordinatorProtocol {
 }
 
 class LoginCoordinator: Coordinator {
+    
     var navigationController: UINavigationController
     
     var childCoordinators: [String : Coordinator]
     
     weak var parentCoordinator: Coordinator?
     
-    init(navigationController: UINavigationController, parentCoordinator: Coordinator? = nil) {
+    init(
+        navigationController: UINavigationController,
+        parentCoordinator: Coordinator? = nil
+    ) {
         self.navigationController = navigationController
         self.parentCoordinator = parentCoordinator
         self.childCoordinators = [String : Coordinator]()
@@ -27,9 +31,10 @@ class LoginCoordinator: Coordinator {
     
     func start() {
         let viewModel = LoginViewModel(coordinator: self, requestLoginUseCase: RequestLoginUseCase())
-        let viewController = LoginViewController.create(with: viewModel)
+        let viewController = LoginViewController(with: viewModel)
         navigationController.setViewControllers([viewController], animated: true)
     }
+    
 }
 
 extension LoginCoordinator: LoginCoordinatorProtocol {

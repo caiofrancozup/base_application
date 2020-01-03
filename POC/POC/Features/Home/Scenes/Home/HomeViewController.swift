@@ -1,22 +1,22 @@
 //
-//  LoginViewController.swift
+//  HomeViewController.swift
 //  POC
 //
-//  Created by Bruno Vieira on 02/01/20.
+//  Created by Bruno Vieira on 03/01/20.
 //  Copyright © 2020 Bruno Vieira. All rights reserved.
 //
 
 import UIKit
 
-final class LoginViewController: UIViewController {
+final class HomeViewController: UIViewController {
     
-    private let viewModel: LoginViewModel
+    private let viewModel: HomeViewModel
     
     init(
-        with viewModel: LoginViewModel
+        with viewModel: HomeViewModel
     ) {
         self.viewModel = viewModel
-        super.init(nibName: "LoginView", bundle: nil)
+        super.init(nibName: "HomeView", bundle: nil)
     }
     
     @available(*, unavailable)
@@ -26,11 +26,9 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Home"
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    @IBAction private func loginTapped(_ sender: Any) {
-        viewModel.login()
-    }
     
 }

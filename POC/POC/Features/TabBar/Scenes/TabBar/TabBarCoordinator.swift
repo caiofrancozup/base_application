@@ -17,14 +17,35 @@ class TabBarCoordinator: Coordinator {
     
     init(
         navigationController: UINavigationController,
-        parentCoordinator: Coordinator? = nil) {
+        parentCoordinator: Coordinator? = nil
+    ) {
         self.navigationController = navigationController
         self.parentCoordinator = parentCoordinator
         self.childCoordinators = [String : Coordinator]()
     }
     
     func start() {
-        let viewController = TabBarViewController.instantiate()
+        let homeNavigationController = UINavigationController()
+        let homeCoordinator = HomeCoordinator(navigationController: homeNavigationController, parentCoordinator: self)
+        let homeTabBarItem = UITabBarItem(title: TabBarViewModel.TabIndex.home.title(), image: nil, selectedImage: nil)
+        homeNavigationController.tabBarItem = homeTabBarItem
+        let aNavigationController = UINavigationController()
+        let aCoordinator = FirstCoordinator(navigationController: aNavigationController, parentCoordinator: self)
+        let aTabBarItem = UITabBarItem(title: TabBarViewModel.TabIndex.featureA.title(), image: nil, selectedImage: nil)
+        aNavigationController.tabBarItem = aTabBarItem
+//        let bNavigationController = UINavigationController()
+//        let bCoordinator = ThirdCoordinator(navigationController: bNavigationController, parentCoordinator: self)
+//        let cNavigationController = UINavigationController()
+//        let cCoordinator = FifthCoordinator(navigationController: cNavigationController, parentCoordinator: self)
+        
+        addChildCoordinator(homeCoordinator)
+        addChildCoordinator(aCoordinator)
+        let viewModel = TabBarViewModel(coordinator: self,
+                                        tabBarControllers: [homeNavigationController,
+                                                            aNavigationController],
+                                        tabBarItems: [homeTabBarItem,
+                                                      aTabBarItem])
+        let viewController = TabBarViewController(with: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }
     

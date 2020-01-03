@@ -1,19 +1,20 @@
 //
-//  FirstCoordinator.swift
+//  HomeCoordinator.swift
 //  POC
 //
-//  Created by Bruno Vieira on 02/01/20.
+//  Created by Bruno Vieira on 03/01/20.
 //  Copyright © 2020 Bruno Vieira. All rights reserved.
 //
 
 import UIKit
 
-class FirstCoordinator: Coordinator {
+class HomeCoordinator: Coordinator {
+    
     var navigationController: UINavigationController
     
     var childCoordinators: [String : Coordinator]
     
-    var parentCoordinator: Coordinator?
+    weak var parentCoordinator: Coordinator?
     
     init(
         navigationController: UINavigationController,
@@ -25,9 +26,8 @@ class FirstCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = FirstViewController(with: FirstViewModel())
-        navigationController.pushViewController(viewController, animated: true)
+        let viewModel = HomeViewModel(coordinator: self)
+        let viewController = HomeViewController(with: viewModel)
+        navigationController.setViewControllers([viewController], animated: true)
     }
-    
-    
 }

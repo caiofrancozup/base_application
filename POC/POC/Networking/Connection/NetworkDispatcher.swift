@@ -11,8 +11,14 @@ import Foundation
 extension Error {
     
     var networkErrors: [Int] {
-        return [NSURLErrorCannotConnectToHost, NSURLErrorNetworkConnectionLost, NSURLErrorDNSLookupFailed, NSURLErrorResourceUnavailable,
-                NSURLErrorNotConnectedToInternet, NSURLErrorBadServerResponse, NSURLErrorInternationalRoamingOff, NSURLErrorCallIsActive]
+        return [NSURLErrorCannotConnectToHost,
+                NSURLErrorNetworkConnectionLost,
+                NSURLErrorDNSLookupFailed,
+                NSURLErrorResourceUnavailable,
+                NSURLErrorNotConnectedToInternet,
+                NSURLErrorBadServerResponse,
+                NSURLErrorInternationalRoamingOff,
+                NSURLErrorCallIsActive]
     }
     
     var isNetworkConnectionError: Bool {
