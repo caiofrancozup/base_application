@@ -19,6 +19,10 @@
 		374251C323BF83BA00EB658D /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374251C223BF83BA00EB658D /* FirstView.xib */; };
 		374251C523BF83EF00EB658D /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251C423BF83EF00EB658D /* FirstViewModel.swift */; };
 		374251C823BF8F2A00EB658D /* UITabBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251C723BF8F2A00EB658D /* UITabBar+Extensions.swift */; };
+		374251CC23BFBA9000EB658D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251CB23BFBA9000EB658D /* CustomView.swift */; };
+		374251CF23BFBB0700EB658D /* CustomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251CE23BFBB0700EB658D /* CustomViewModel.swift */; };
+		374251D123BFBCD200EB658D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251D023BFBCD200EB658D /* CardView.swift */; };
+		374251D323BFBCE200EB658D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251D223BFBCE200EB658D /* UIView+Extensions.swift */; };
 		379F6EBD23BA25CF005ECA5F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6EBC23BA25CF005ECA5F /* Alert.swift */; };
 		379F6ED223BA27B2005ECA5F /* AService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6ED123BA27B2005ECA5F /* AService.swift */; };
 		379F6ED523BA27BF005ECA5F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6ED423BA27BF005ECA5F /* LoginService.swift */; };
@@ -75,6 +79,10 @@
 		374251C223BF83BA00EB658D /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		374251C423BF83EF00EB658D /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 		374251C723BF8F2A00EB658D /* UITabBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extensions.swift"; sourceTree = "<group>"; };
+		374251CB23BFBA9000EB658D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		374251CE23BFBB0700EB658D /* CustomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModel.swift; sourceTree = "<group>"; };
+		374251D023BFBCD200EB658D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		374251D223BFBCE200EB658D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		379F6EBC23BA25CF005ECA5F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		379F6ED123BA27B2005ECA5F /* AService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AService.swift; sourceTree = "<group>"; };
 		379F6ED423BA27BF005ECA5F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -195,8 +203,18 @@
 			isa = PBXGroup;
 			children = (
 				374251C723BF8F2A00EB658D /* UITabBar+Extensions.swift */,
+				374251D223BFBCE200EB658D /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		374251CA23BFBA7C00EB658D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				374251CB23BFBA9000EB658D /* CustomView.swift */,
+				374251CE23BFBB0700EB658D /* CustomViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		379F6EBF23BA264A005ECA5F /* Features */ = {
@@ -503,7 +521,9 @@
 		37F1D29923BE243700DC261C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				374251CA23BFBA7C00EB658D /* Base */,
 				37F1D29B23BE256E00DC261C /* Button.swift */,
+				374251D023BFBCD200EB658D /* CardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -798,9 +818,12 @@
 				374251BD23BF769900EB658D /* HomeViewController.swift in Sources */,
 				374251C823BF8F2A00EB658D /* UITabBar+Extensions.swift in Sources */,
 				379F6ED523BA27BF005ECA5F /* LoginService.swift in Sources */,
+				374251CF23BFBB0700EB658D /* CustomViewModel.swift in Sources */,
+				374251D323BFBCE200EB658D /* UIView+Extensions.swift in Sources */,
 				37F1D29C23BE256E00DC261C /* Button.swift in Sources */,
 				37F1D2BF23BE36C200DC261C /* TabBarViewController.swift in Sources */,
 				37D031A323B13AD500BFC394 /* AppCoordinator.swift in Sources */,
+				374251D123BFBCD200EB658D /* CardView.swift in Sources */,
 				374251AC23BE523500EB658D /* RequestLoginUseCase.swift in Sources */,
 				379F6ED223BA27B2005ECA5F /* AService.swift in Sources */,
 				379F6EBD23BA25CF005ECA5F /* Alert.swift in Sources */,
@@ -808,6 +831,7 @@
 				374251BF23BF76C200EB658D /* HomeCoordinator.swift in Sources */,
 				37F1D2C123BE36CC00DC261C /* TabBarCoordinator.swift in Sources */,
 				37F1D2B723BE355600DC261C /* FirstCoordinator.swift in Sources */,
+				374251CC23BFBA9000EB658D /* CustomView.swift in Sources */,
 				374251C123BF76D600EB658D /* HomeViewModel.swift in Sources */,
 				37F1D2C323BE4AD600DC261C /* LoginViewModel.swift in Sources */,
 				37F1D2A823BE26E700DC261C /* NetworkDispatcher.swift in Sources */,
