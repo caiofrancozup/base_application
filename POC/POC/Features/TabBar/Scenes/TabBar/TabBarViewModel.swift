@@ -13,6 +13,7 @@ final class TabBarViewModel {
     enum TabIndex: Int {
         case home
         case featureA
+        case featureB
         
         func title() -> String {
             switch self {
@@ -20,6 +21,8 @@ final class TabBarViewModel {
                 return "Home"
             case .featureA:
                 return "AAA"
+            case .featureB:
+                return "BBB"
             }
         }
     }

@@ -27,13 +27,7 @@ final class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        
-        if #available(iOS 11, *) {
-            tabBar.barTintColor = UIColor.red
-            tabBar.layer.masksToBounds = true
-            tabBar.layer.cornerRadius = 20
-            tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        }
+        tabBar.updateAppearance()
     }
     
     private func setup() {

@@ -10,6 +10,17 @@ import UIKit
 
 public extension UITabBar {
     
+    func updateAppearance() {
+        if #available(iOS 11, *) {
+            barTintColor = Colors.blue
+            tintColor = Colors.white
+            unselectedItemTintColor = Colors.lightBlue
+            layer.masksToBounds = true
+            layer.cornerRadius = 20
+            layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        }
+    }
+    
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         super.sizeThatFits(size)
         guard let window = UIApplication.shared.keyWindow else {

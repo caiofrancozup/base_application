@@ -1,14 +1,13 @@
 //
-//  FirstViewModel.swift
+//  ThirdViewModel.swift
 //  POC
 //
 //  Created by Bruno Vieira on 03/01/20.
 //  Copyright © 2020 Bruno Vieira. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-final class FirstViewModel {
-    
+final class ThirdViewModel {
     
 }

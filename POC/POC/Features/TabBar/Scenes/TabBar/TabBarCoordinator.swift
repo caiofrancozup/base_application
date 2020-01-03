@@ -33,18 +33,23 @@ class TabBarCoordinator: Coordinator {
         let aCoordinator = FirstCoordinator(navigationController: aNavigationController, parentCoordinator: self)
         let aTabBarItem = UITabBarItem(title: TabBarViewModel.TabIndex.featureA.title(), image: nil, selectedImage: nil)
         aNavigationController.tabBarItem = aTabBarItem
-//        let bNavigationController = UINavigationController()
-//        let bCoordinator = ThirdCoordinator(navigationController: bNavigationController, parentCoordinator: self)
+        let bNavigationController = UINavigationController()
+        let bCoordinator = ThirdCoordinator(navigationController: bNavigationController, parentCoordinator: self)
+        let bTabBarItem = UITabBarItem(title: TabBarViewModel.TabIndex.featureB.title(), image: nil, selectedImage: nil)
+        bNavigationController.tabBarItem = bTabBarItem
 //        let cNavigationController = UINavigationController()
 //        let cCoordinator = FifthCoordinator(navigationController: cNavigationController, parentCoordinator: self)
         
         addChildCoordinator(homeCoordinator)
         addChildCoordinator(aCoordinator)
+        addChildCoordinator(bCoordinator)
         let viewModel = TabBarViewModel(coordinator: self,
                                         tabBarControllers: [homeNavigationController,
-                                                            aNavigationController],
+                                                            aNavigationController,
+                                                            bNavigationController],
                                         tabBarItems: [homeTabBarItem,
-                                                      aTabBarItem])
+                                                      aTabBarItem,
+                                                      bTabBarItem])
         let viewController = TabBarViewController(with: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }
