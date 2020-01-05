@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3709C49223C2591500318809 /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49123C2591500318809 /* Margins.swift */; };
+		3709C49423C25B5C00318809 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49323C25B5C00318809 /* Sizes.swift */; };
 		374251AC23BE523500EB658D /* RequestLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251AB23BE523500EB658D /* RequestLoginUseCase.swift */; };
 		374251AE23BE762E00EB658D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251AD23BE762E00EB658D /* User.swift */; };
 		374251B023BF5FA400EB658D /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374251AF23BF5FA400EB658D /* LoginView.xib */; };
@@ -21,7 +23,6 @@
 		374251C823BF8F2A00EB658D /* UITabBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251C723BF8F2A00EB658D /* UITabBar+Extensions.swift */; };
 		374251CC23BFBA9000EB658D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251CB23BFBA9000EB658D /* CustomView.swift */; };
 		374251CF23BFBB0700EB658D /* CustomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251CE23BFBB0700EB658D /* CustomViewModel.swift */; };
-		374251D123BFBCD200EB658D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251D023BFBCD200EB658D /* CardView.swift */; };
 		374251D323BFBCE200EB658D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251D223BFBCE200EB658D /* UIView+Extensions.swift */; };
 		374251D523BFC82800EB658D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251D423BFC82800EB658D /* Fonts.swift */; };
 		374251D823BFC91200EB658D /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251D723BFC91200EB658D /* ThirdView.swift */; };
@@ -29,6 +30,10 @@
 		374251DC23BFCA0600EB658D /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251DB23BFCA0600EB658D /* ThirdCoordinator.swift */; };
 		374251DE23BFCA2500EB658D /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251DD23BFCA2500EB658D /* ThirdViewModel.swift */; };
 		374251E223BFCB6000EB658D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251E123BFCB6000EB658D /* Environment.swift */; };
+		374251E523BFD93F00EB658D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251E423BFD93F00EB658D /* CardView.swift */; };
+		374251E723BFD94D00EB658D /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251E623BFD94D00EB658D /* RoundShadowView.swift */; };
+		374251E923BFDA5800EB658D /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251E823BFDA5800EB658D /* ProgressBarView.swift */; };
+		374251EC23BFDB1800EB658D /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251EB23BFDB1800EB658D /* CGFloat+Extensions.swift */; };
 		379F6EBD23BA25CF005ECA5F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6EBC23BA25CF005ECA5F /* Alert.swift */; };
 		379F6ED223BA27B2005ECA5F /* AService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6ED123BA27B2005ECA5F /* AService.swift */; };
 		379F6ED523BA27BF005ECA5F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6ED423BA27BF005ECA5F /* LoginService.swift */; };
@@ -73,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3709C49123C2591500318809 /* Margins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margins.swift; sourceTree = "<group>"; };
+		3709C49323C25B5C00318809 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		374251AB23BE523500EB658D /* RequestLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoginUseCase.swift; sourceTree = "<group>"; };
 		374251AD23BE762E00EB658D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		374251AF23BF5FA400EB658D /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -87,7 +94,6 @@
 		374251C723BF8F2A00EB658D /* UITabBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extensions.swift"; sourceTree = "<group>"; };
 		374251CB23BFBA9000EB658D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		374251CE23BFBB0700EB658D /* CustomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModel.swift; sourceTree = "<group>"; };
-		374251D023BFBCD200EB658D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		374251D223BFBCE200EB658D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		374251D423BFC82800EB658D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		374251D723BFC91200EB658D /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,10 @@
 		374251DB23BFCA0600EB658D /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
 		374251DD23BFCA2500EB658D /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
 		374251E123BFCB6000EB658D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		374251E423BFD93F00EB658D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		374251E623BFD94D00EB658D /* RoundShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
+		374251E823BFDA5800EB658D /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		374251EB23BFDB1800EB658D /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		379F6EBC23BA25CF005ECA5F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		379F6ED123BA27B2005ECA5F /* AService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AService.swift; sourceTree = "<group>"; };
 		379F6ED423BA27BF005ECA5F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -223,6 +233,7 @@
 		374251CA23BFBA7C00EB658D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				374251E623BFD94D00EB658D /* RoundShadowView.swift */,
 				374251CB23BFBA9000EB658D /* CustomView.swift */,
 				374251CE23BFBB0700EB658D /* CustomViewModel.swift */,
 			);
@@ -259,6 +270,14 @@
 				37C8858F23B84BC500277A3B /* Colors.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		374251EA23BFDB0D00EB658D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				374251EB23BFDB1800EB658D /* CGFloat+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		379F6EBF23BA264A005ECA5F /* Features */ = {
@@ -350,6 +369,8 @@
 				37C8859423B84EF000277A3B /* Images.swift */,
 				379F6EBC23BA25CF005ECA5F /* Alert.swift */,
 				379F6ED823BA2A0D005ECA5F /* Loading.swift */,
+				3709C49123C2591500318809 /* Margins.swift */,
+				3709C49323C25B5C00318809 /* Sizes.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -382,6 +403,7 @@
 				379F6EBF23BA264A005ECA5F /* Features */,
 				379F6EC023BA264F005ECA5F /* Networking */,
 				379F6EC323BA2732005ECA5F /* Resources */,
+				37C8859123B84D7300277A3B /* UI */,
 			);
 			path = POC;
 			sourceTree = "<group>";
@@ -408,7 +430,7 @@
 		37D0319B23B139A600BFC394 /* Conveniences */ = {
 			isa = PBXGroup;
 			children = (
-				37C8859123B84D7300277A3B /* UI */,
+				374251EA23BFDB0D00EB658D /* Extensions */,
 				37D0319C23B139AE00BFC394 /* Coordinator */,
 			);
 			path = Conveniences;
@@ -573,7 +595,8 @@
 			children = (
 				374251CA23BFBA7C00EB658D /* Base */,
 				37F1D29B23BE256E00DC261C /* Button.swift */,
-				374251D023BFBCD200EB658D /* CardView.swift */,
+				374251E423BFD93F00EB658D /* CardView.swift */,
+				374251E823BFDA5800EB658D /* ProgressBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -858,12 +881,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				374251D823BFC91200EB658D /* ThirdView.swift in Sources */,
+				374251EC23BFDB1800EB658D /* CGFloat+Extensions.swift in Sources */,
 				37F1D2B323BE2E5300DC261C /* LoginViewController.swift in Sources */,
 				37C8859523B84EF000277A3B /* Images.swift in Sources */,
 				37D0317023B1389600BFC394 /* FirstViewController.swift in Sources */,
 				37C8859323B84D9600277A3B /* Colors.swift in Sources */,
+				374251E523BFD93F00EB658D /* CardView.swift in Sources */,
 				379F6ED923BA2A0D005ECA5F /* Loading.swift in Sources */,
 				37D0316C23B1389600BFC394 /* AppDelegate.swift in Sources */,
+				3709C49223C2591500318809 /* Margins.swift in Sources */,
 				374251C523BF83EF00EB658D /* FirstViewModel.swift in Sources */,
 				37D0319E23B139B900BFC394 /* Coordinator.swift in Sources */,
 				374251BD23BF769900EB658D /* HomeViewController.swift in Sources */,
@@ -875,13 +901,13 @@
 				37F1D29C23BE256E00DC261C /* Button.swift in Sources */,
 				37F1D2BF23BE36C200DC261C /* TabBarViewController.swift in Sources */,
 				37D031A323B13AD500BFC394 /* AppCoordinator.swift in Sources */,
-				374251D123BFBCD200EB658D /* CardView.swift in Sources */,
 				374251AC23BE523500EB658D /* RequestLoginUseCase.swift in Sources */,
 				374251DA23BFC99500EB658D /* ThirdViewController.swift in Sources */,
 				379F6ED223BA27B2005ECA5F /* AService.swift in Sources */,
 				379F6EBD23BA25CF005ECA5F /* Alert.swift in Sources */,
 				37F1D2B523BE302600DC261C /* LoginCoordinator.swift in Sources */,
 				374251BF23BF76C200EB658D /* HomeCoordinator.swift in Sources */,
+				374251E923BFDA5800EB658D /* ProgressBarView.swift in Sources */,
 				37F1D2C123BE36CC00DC261C /* TabBarCoordinator.swift in Sources */,
 				37F1D2B723BE355600DC261C /* FirstCoordinator.swift in Sources */,
 				374251D523BFC82800EB658D /* Fonts.swift in Sources */,
@@ -889,6 +915,8 @@
 				374251C123BF76D600EB658D /* HomeViewModel.swift in Sources */,
 				37F1D2C323BE4AD600DC261C /* LoginViewModel.swift in Sources */,
 				37F1D2A823BE26E700DC261C /* NetworkDispatcher.swift in Sources */,
+				3709C49423C25B5C00318809 /* Sizes.swift in Sources */,
+				374251E723BFD94D00EB658D /* RoundShadowView.swift in Sources */,
 				374251DE23BFCA2500EB658D /* ThirdViewModel.swift in Sources */,
 				374251B223BF678900EB658D /* TabBarViewModel.swift in Sources */,
 				374251AE23BE762E00EB658D /* User.swift in Sources */,

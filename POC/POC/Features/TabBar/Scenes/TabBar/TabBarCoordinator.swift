@@ -54,5 +54,10 @@ class TabBarCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    func finish() {
+        navigationController.popViewController(animated: true)
+    }
+    
+    
     
 }

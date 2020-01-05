@@ -13,6 +13,7 @@ final class ThirdViewController: UIViewController {
     private let viewModel: ThirdViewModel
     private lazy var thirdView: ThirdView = {
         let view = ThirdView(model: nil)
+        view.delegate = self
         return view
     }()
     
@@ -38,4 +39,15 @@ final class ThirdViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+}
+
+extension ThirdViewController: ThirdViewDelegate {
+    
+    func logoutButtonTapped() {
+        viewModel.closeFeature()
+    }
+    
+    func progressButtonTapped() {
+        thirdView.model = viewModel.getModel()
+    }
 }

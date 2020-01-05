@@ -11,6 +11,41 @@ import UIKit
 // MARK: Constraints helper
 extension UIView {
     
+    var top: NSLayoutYAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.topAnchor
+        } else {
+            return layoutMarginsGuide.topAnchor
+        }
+    }
+    
+    
+    var bottom: NSLayoutYAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.bottomAnchor
+        } else {
+            return layoutMarginsGuide.bottomAnchor
+        }
+    }
+    
+    
+    var left: NSLayoutXAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.leftAnchor
+        } else {
+            return layoutMarginsGuide.leftAnchor
+        }
+    }
+    
+    
+    var right: NSLayoutXAxisAnchor {
+        if #available(iOS 11, *) {
+            return safeAreaLayoutGuide.rightAnchor
+        } else {
+            return layoutMarginsGuide.rightAnchor
+        }
+    }
+    
     public func layoutGuide() -> UILayoutGuide {
         if #available(iOS 11, *) {
             return safeAreaLayoutGuide

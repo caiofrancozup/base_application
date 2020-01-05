@@ -26,9 +26,13 @@ class ThirdCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = ThirdViewModel()
+        let viewModel = ThirdViewModel(coordinator: self)
         let viewController = ThirdViewController(with: viewModel)
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func finish() {
+        parentCoordinator?.finish()
     }
     
     
