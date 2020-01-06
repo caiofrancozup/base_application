@@ -62,8 +62,21 @@ extension UIView {
             let layoutGuide = superview.layoutGuide()
             let top = topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: topConstant)
             let left = leftAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: leftConstant)
-            let bottom = bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: bottomConstant)
-            let right = rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: rightConstant)
+            let bottom = bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -bottomConstant)
+            let right = rightAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -rightConstant)
+            NSLayoutConstraint.activate([left, right, top, bottom])
+        }
+    }
+    
+    public func anchorToSuperview(topConstant: CGFloat = 0,
+                                  leftConstant: CGFloat = 0,
+                                  bottomConstant: CGFloat = 0,
+                                  rightConstant: CGFloat = 0) {
+        if let superview = superview {
+            let top = topAnchor.constraint(equalTo: superview.topAnchor, constant: topConstant)
+            let left = leftAnchor.constraint(equalTo: superview.leftAnchor, constant: leftConstant)
+            let bottom = bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -bottomConstant)
+            let right = rightAnchor.constraint(equalTo: superview.rightAnchor, constant: -rightConstant)
             NSLayoutConstraint.activate([left, right, top, bottom])
         }
     }

@@ -40,10 +40,16 @@ class RoundShadowView: CustomView<RoundShadowView.Model> {
     
     override public func setupConstraints() {
         super.setupConstraints()
-        roundedView.anchorToSafeArea(topConstant: model.margin,
-                                     leftConstant: model.margin,
-                                     bottomConstant: model.margin,
-                                     rightConstant: model.margin)
+        addConstraints([
+            roundedView.topAnchor.constraint(equalTo: topAnchor),
+            roundedView.leftAnchor.constraint(equalTo: leftAnchor),
+            roundedView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            roundedView.rightAnchor.constraint(equalTo: rightAnchor)
+        ])
+//        roundedView.anchorToSafeArea(topConstant: model.margin,
+//                                     leftConstant: model.margin,
+//                                     bottomConstant: model.margin,
+//                                     rightConstant: model.margin)
     }
     
     override public func didUpdateModel() {
@@ -64,6 +70,13 @@ class RoundShadowView: CustomView<RoundShadowView.Model> {
     private func configureSubview(_ view: UIView) {
         view.translatesAutoresizingMaskIntoConstraints = false
         roundedView.addSubview(view)
-        view.anchorToSafeArea()
+        
+        roundedView.addConstraints([
+            view.topAnchor.constraint(equalTo: roundedView.topAnchor),
+            view.leftAnchor.constraint(equalTo: roundedView.leftAnchor),
+            view.bottomAnchor.constraint(equalTo: roundedView.bottomAnchor),
+            view.rightAnchor.constraint(equalTo: roundedView.rightAnchor)
+        ])
+//        view.anchorToSafeArea()
     }
 }

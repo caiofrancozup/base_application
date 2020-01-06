@@ -32,6 +32,7 @@ final class TabBarViewController: UITabBarController {
     
     private func setup() {
         setViewControllers(viewModel.tabBarControllers, animated: false)
+        selectedIndex = 1
     }
     
 }

@@ -10,6 +10,7 @@ import UIKit
 
 final class Margins {
     
+    static let zero: CGFloat = 0.0
     static let `default`: CGFloat = 20.0
     static let short: CGFloat = 10.0
     static let large: CGFloat = 40.0
