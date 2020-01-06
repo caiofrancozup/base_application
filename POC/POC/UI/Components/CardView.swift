@@ -54,22 +54,6 @@ public class CardView: CustomView<CardView.Model> {
     
     override public func didUpdateModel() {
         super.didUpdateModel()
-        
-//        backgroundColor = .clear
-//        clipsToBounds = true
-//        layer.masksToBounds = false
-//        layer.shadowColor = UIColor.black.cgColor
-//        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-//        layer.shadowRadius = model.cornerRadius
-//        layer.shadowOpacity = 0.5
-//
-//        configureSubview(model.subview)
-//        roundedView.layer.cornerRadius = model.cornerRadius
-    }
-    
-    private func configureSubview(_ view: UIView) {
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        roundedView.addSubview(view)
-//        view.anchorToSafeArea()
+        backgroundColor = .yellow
     }
 }

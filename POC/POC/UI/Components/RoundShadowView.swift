@@ -55,9 +55,9 @@ class RoundShadowView: CustomView<RoundShadowView.Model> {
         clipsToBounds = true
         layer.masksToBounds = false
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        layer.shadowRadius = model.cornerRadius
-        layer.shadowOpacity = 0.5
+        layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+        layer.shadowRadius = 5.0
+        layer.shadowOpacity = 0.25
 
         configureSubview(model.subview)
         roundedView.layer.cornerRadius = model.cornerRadius

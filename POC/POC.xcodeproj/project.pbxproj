@@ -40,6 +40,15 @@
 		379F6ED523BA27BF005ECA5F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6ED423BA27BF005ECA5F /* LoginService.swift */; };
 		379F6ED923BA2A0D005ECA5F /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F6ED823BA2A0D005ECA5F /* Loading.swift */; };
 		37AAC97723C3599E00E4FD15 /* AccountSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC97623C3599E00E4FD15 /* AccountSummaryView.swift */; };
+		37AAC97923C378CF00E4FD15 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC97823C378CF00E4FD15 /* SectionHeaderView.swift */; };
+		37AAC97B23C380D600E4FD15 /* ShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC97A23C380D600E4FD15 /* ShortcutView.swift */; };
+		37AAC98223C39A5100E4FD15 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98123C39A5100E4FD15 /* TableViewCell.swift */; };
+		37AAC98423C39A7200E4FD15 /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98323C39A7200E4FD15 /* CellIdentifiable.swift */; };
+		37AAC98623C39AAA00E4FD15 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98523C39AAA00E4FD15 /* CollectionViewCell.swift */; };
+		37AAC98823C39B5300E4FD15 /* CardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98723C39B5300E4FD15 /* CardCollectionCell.swift */; };
+		37AAC98A23C3A21400E4FD15 /* ShortcutCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98923C3A21400E4FD15 /* ShortcutCollectionCell.swift */; };
+		37AAC98F23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98E23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift */; };
+		37AAC99123C3A8C500E4FD15 /* CardsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC99023C3A8C500E4FD15 /* CardsCarouselView.swift */; };
 		37C8859023B84BC500277A3B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C8858F23B84BC500277A3B /* Colors.xcassets */; };
 		37C8859323B84D9600277A3B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8859223B84D9600277A3B /* Colors.swift */; };
 		37C8859523B84EF000277A3B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8859423B84EF000277A3B /* Images.swift */; };
@@ -113,6 +122,15 @@
 		379F6ED423BA27BF005ECA5F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		379F6ED823BA2A0D005ECA5F /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		37AAC97623C3599E00E4FD15 /* AccountSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryView.swift; sourceTree = "<group>"; };
+		37AAC97823C378CF00E4FD15 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		37AAC97A23C380D600E4FD15 /* ShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutView.swift; sourceTree = "<group>"; };
+		37AAC98123C39A5100E4FD15 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		37AAC98323C39A7200E4FD15 /* CellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		37AAC98523C39AAA00E4FD15 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		37AAC98723C39B5300E4FD15 /* CardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionCell.swift; sourceTree = "<group>"; };
+		37AAC98923C3A21400E4FD15 /* ShortcutCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutCollectionCell.swift; sourceTree = "<group>"; };
+		37AAC98E23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsCarouselView.swift; sourceTree = "<group>"; };
+		37AAC99023C3A8C500E4FD15 /* CardsCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCarouselView.swift; sourceTree = "<group>"; };
 		37C8858F23B84BC500277A3B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		37C8859223B84D9600277A3B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		37C8859423B84EF000277A3B /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -239,6 +257,7 @@
 			children = (
 				374251CB23BFBA9000EB658D /* CustomView.swift */,
 				374251CE23BFBB0700EB658D /* CustomViewModel.swift */,
+				37AAC98323C39A7200E4FD15 /* CellIdentifiable.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -360,6 +379,65 @@
 				37F1D28F23BE1A0100DC261C /* Scenes */,
 			);
 			path = FeatureA;
+			sourceTree = "<group>";
+		};
+		37AAC97C23C3819400E4FD15 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				37AAC97F23C381A600E4FD15 /* Base */,
+				37AAC99223C3A9E700E4FD15 /* Cells */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		37AAC97D23C3819B00E4FD15 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				37AAC97E23C381A400E4FD15 /* Base */,
+				37AAC98D23C3A83600E4FD15 /* Cells */,
+				37AAC98E23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift */,
+				37AAC99023C3A8C500E4FD15 /* CardsCarouselView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		37AAC97E23C381A400E4FD15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				37AAC98523C39AAA00E4FD15 /* CollectionViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		37AAC97F23C381A600E4FD15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				37AAC98123C39A5100E4FD15 /* TableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		37AAC98023C381B200E4FD15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37AAC98D23C3A83600E4FD15 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				37AAC98723C39B5300E4FD15 /* CardCollectionCell.swift */,
+				37AAC98923C3A21400E4FD15 /* ShortcutCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		37AAC99223C3A9E700E4FD15 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		37C8859123B84D7300277A3B /* UI */ = {
@@ -597,6 +675,9 @@
 			isa = PBXGroup;
 			children = (
 				374251CA23BFBA7C00EB658D /* Base */,
+				37AAC97D23C3819B00E4FD15 /* CollectionView */,
+				37AAC97C23C3819400E4FD15 /* TableView */,
+				37AAC98023C381B200E4FD15 /* View */,
 				37F1D29B23BE256E00DC261C /* Button.swift */,
 				374251E423BFD93F00EB658D /* CardView.swift */,
 				3709C49B23C2740E00318809 /* LineView.swift */,
@@ -604,6 +685,8 @@
 				374251E623BFD94D00EB658D /* RoundShadowView.swift */,
 				3709C4A123C2D73900318809 /* UserView.swift */,
 				37AAC97623C3599E00E4FD15 /* AccountSummaryView.swift */,
+				37AAC97823C378CF00E4FD15 /* SectionHeaderView.swift */,
+				37AAC97A23C380D600E4FD15 /* ShortcutView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -893,8 +976,11 @@
 				3709C49823C26CAE00318809 /* HomeView.swift in Sources */,
 				374251CF23BFBB0700EB658D /* CustomViewModel.swift in Sources */,
 				374251E223BFCB6000EB658D /* Environment.swift in Sources */,
+				37AAC98423C39A7200E4FD15 /* CellIdentifiable.swift in Sources */,
+				37AAC97B23C380D600E4FD15 /* ShortcutView.swift in Sources */,
 				374251D323BFBCE200EB658D /* UIView+Extensions.swift in Sources */,
 				37F1D29C23BE256E00DC261C /* Button.swift in Sources */,
+				37AAC98A23C3A21400E4FD15 /* ShortcutCollectionCell.swift in Sources */,
 				37F1D2BF23BE36C200DC261C /* TabBarViewController.swift in Sources */,
 				37D031A323B13AD500BFC394 /* AppCoordinator.swift in Sources */,
 				3709C49C23C2740E00318809 /* LineView.swift in Sources */,
@@ -906,19 +992,25 @@
 				37F1D2B523BE302600DC261C /* LoginCoordinator.swift in Sources */,
 				374251BF23BF76C200EB658D /* HomeCoordinator.swift in Sources */,
 				374251E923BFDA5800EB658D /* ProgressBarView.swift in Sources */,
+				37AAC98623C39AAA00E4FD15 /* CollectionViewCell.swift in Sources */,
 				3709C49A23C26F1B00318809 /* LoginView.swift in Sources */,
 				37F1D2C123BE36CC00DC261C /* TabBarCoordinator.swift in Sources */,
 				37F1D2B723BE355600DC261C /* FirstCoordinator.swift in Sources */,
 				374251D523BFC82800EB658D /* Fonts.swift in Sources */,
+				37AAC99123C3A8C500E4FD15 /* CardsCarouselView.swift in Sources */,
 				374251CC23BFBA9000EB658D /* CustomView.swift in Sources */,
 				374251C123BF76D600EB658D /* HomeViewModel.swift in Sources */,
+				37AAC98F23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift in Sources */,
 				37F1D2C323BE4AD600DC261C /* LoginViewModel.swift in Sources */,
 				37F1D2A823BE26E700DC261C /* NetworkDispatcher.swift in Sources */,
 				3709C49423C25B5C00318809 /* Sizes.swift in Sources */,
 				37AAC97723C3599E00E4FD15 /* AccountSummaryView.swift in Sources */,
 				374251E723BFD94D00EB658D /* RoundShadowView.swift in Sources */,
+				37AAC97923C378CF00E4FD15 /* SectionHeaderView.swift in Sources */,
+				37AAC98223C39A5100E4FD15 /* TableViewCell.swift in Sources */,
 				374251DE23BFCA2500EB658D /* ThirdViewModel.swift in Sources */,
 				374251B223BF678900EB658D /* TabBarViewModel.swift in Sources */,
+				37AAC98823C39B5300E4FD15 /* CardCollectionCell.swift in Sources */,
 				374251AE23BE762E00EB658D /* User.swift in Sources */,
 				374251DC23BFCA0600EB658D /* ThirdCoordinator.swift in Sources */,
 			);

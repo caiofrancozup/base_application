@@ -22,8 +22,8 @@ class HomeView: CustomView<HomeView.Model?> {
         didSet {
             userView.delegate = delegate
 //            accountCardView.delegate = delegate
-            cardCarouselView.delegate = delegate
-            shortcutsCarouselView.delegate = delegate
+//            cardCarouselView.delegate = delegate
+//            shortcutsCarouselView.delegate = delegate
         }
     }
 
@@ -67,8 +67,8 @@ class HomeView: CustomView<HomeView.Model?> {
         return view
     }()
     
-    private lazy var cardCarouselView: CardCarouselView = {
-        let view = CardCarouselView(model: nil)
+    private lazy var cardCarouselView: CardsCarouselView = {
+        let view = CardsCarouselView(model: nil)
         return view
     }()
     
@@ -115,12 +115,6 @@ class HomeView: CustomView<HomeView.Model?> {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.anchorToSafeArea()
         
-        cardCarouselView.translatesAutoresizingMaskIntoConstraints = false
-        cardCarouselView.anchorSize(height: 300.0)
-        
-        shortcutsCarouselView.translatesAutoresizingMaskIntoConstraints = false
-        shortcutsCarouselView.anchorSize(height: 200.0)
-        
         bannerCardView.translatesAutoresizingMaskIntoConstraints = false
         bannerCardView.anchorSize(height: 300.0)
     }
@@ -129,42 +123,4 @@ class HomeView: CustomView<HomeView.Model?> {
         super.didUpdateModel()
         backgroundColor = Colors.white
     }
-}
-
-protocol CardCarouselViewDelegate: class {
-    
-}
-
-class CardCarouselView: CustomView<CardCarouselView.Model?> {
-    
-    struct Model: CustomViewModel {
-        
-    }
-    
-    weak var delegate: CardCarouselViewDelegate?
-    
-    override func didUpdateModel() {
-        super.didUpdateModel()
-        backgroundColor = .brown
-    }
-    
-}
-
-protocol ShortcutsCarouselViewDelegate: class {
-    
-}
-
-class ShortcutsCarouselView: CustomView<ShortcutsCarouselView.Model?> {
-    
-    struct Model: CustomViewModel {
-        
-    }
-    
-    weak var delegate: ShortcutsCarouselViewDelegate?
-    
-    override func didUpdateModel() {
-        super.didUpdateModel()
-        backgroundColor = .blue
-    }
-    
 }
