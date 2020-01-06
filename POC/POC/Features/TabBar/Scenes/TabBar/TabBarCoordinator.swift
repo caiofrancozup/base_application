@@ -37,8 +37,6 @@ class TabBarCoordinator: Coordinator {
         let bCoordinator = ThirdCoordinator(navigationController: bNavigationController, parentCoordinator: self)
         let bTabBarItem = UITabBarItem(title: TabBarViewModel.TabIndex.featureB.title(), image: nil, selectedImage: nil)
         bNavigationController.tabBarItem = bTabBarItem
-//        let cNavigationController = UINavigationController()
-//        let cCoordinator = FifthCoordinator(navigationController: cNavigationController, parentCoordinator: self)
         
         addChildCoordinator(homeCoordinator)
         addChildCoordinator(aCoordinator)
@@ -46,10 +44,7 @@ class TabBarCoordinator: Coordinator {
         let viewModel = TabBarViewModel(coordinator: self,
                                         tabBarControllers: [homeNavigationController,
                                                             aNavigationController,
-                                                            bNavigationController],
-                                        tabBarItems: [homeTabBarItem,
-                                                      aTabBarItem,
-                                                      bTabBarItem])
+                                                            bNavigationController])
         let viewController = TabBarViewController(with: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }

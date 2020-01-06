@@ -59,6 +59,7 @@ class ThirdView: CustomView<ThirdView.Model?> {
         super.setupConstraints()
         translatesAutoresizingMaskIntoConstraints = true
         
+        progressBarView.translatesAutoresizingMaskIntoConstraints = false
         progressBarView.anchorMargins(top: top,
                                       left: left,
                                       right: right,
@@ -67,6 +68,7 @@ class ThirdView: CustomView<ThirdView.Model?> {
                                       rightConstant: Margins.default)
         progressBarView.anchorSize(height: Sizes.default)
         
+        progressValueLabel.translatesAutoresizingMaskIntoConstraints = false
         progressValueLabel.anchorMargins(top: progressBarView.bottom,
                                          left: left,
                                          right: right,
@@ -74,10 +76,12 @@ class ThirdView: CustomView<ThirdView.Model?> {
                                          leftConstant: Margins.default,
                                          rightConstant: Margins.default)
         
+        progressButton.translatesAutoresizingMaskIntoConstraints = false
         progressButton.anchorCenterXToSuperview()
         progressButton.anchorMargins(top: progressValueLabel.bottom,
                                      topConstant: Margins.large)
         
+        logoutButton.translatesAutoresizingMaskIntoConstraints = false
         logoutButton.anchorCenterXToSuperview()
         logoutButton.anchorMargins(top: progressButton.bottom,
                                    topConstant: Margins.large)
@@ -85,7 +89,7 @@ class ThirdView: CustomView<ThirdView.Model?> {
     
     override func didUpdateModel() {
         super.didUpdateModel()
-        backgroundColor = .orange
+        backgroundColor = Colors.green
         guard let model = model else { return }
         progressBarView.model = ProgressBarView.Model(progress: model.progress)
         progressValueLabel.text = model.progressValueText

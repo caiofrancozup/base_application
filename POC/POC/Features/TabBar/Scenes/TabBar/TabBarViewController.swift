@@ -16,7 +16,7 @@ final class TabBarViewController: UITabBarController {
         with viewModel: TabBarViewModel
     ) {
         self.viewModel = viewModel
-        super.init(nibName: "TabBarView", bundle: nil)
+        super.init(nibName: nil, bundle: nil)
     }
     
     @available(*, unavailable)
@@ -31,11 +31,7 @@ final class TabBarViewController: UITabBarController {
     }
     
     private func setup() {
-        tabBarController?.tabBar.setItems(viewModel.tabBarItems, animated: false)
         setViewControllers(viewModel.tabBarControllers, animated: false)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 }

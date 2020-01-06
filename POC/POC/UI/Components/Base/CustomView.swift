@@ -59,8 +59,5 @@ open class CustomView<M: CustomViewModel>: UIView, CustomViewProtocol {
 
     open func setupConstraints() {
         translatesAutoresizingMaskIntoConstraints = false
-        for view in subviews {
-            view.translatesAutoresizingMaskIntoConstraints = false
-        }
     }
 }

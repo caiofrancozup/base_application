@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		3709C49223C2591500318809 /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49123C2591500318809 /* Margins.swift */; };
 		3709C49423C25B5C00318809 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49323C25B5C00318809 /* Sizes.swift */; };
+		3709C49623C26BDE00318809 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49523C26BDE00318809 /* FirstView.swift */; };
+		3709C49823C26CAE00318809 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49723C26CAE00318809 /* HomeView.swift */; };
+		3709C49A23C26F1B00318809 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49923C26F1B00318809 /* LoginView.swift */; };
+		3709C49C23C2740E00318809 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709C49B23C2740E00318809 /* LineView.swift */; };
 		374251AC23BE523500EB658D /* RequestLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251AB23BE523500EB658D /* RequestLoginUseCase.swift */; };
 		374251AE23BE762E00EB658D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251AD23BE762E00EB658D /* User.swift */; };
-		374251B023BF5FA400EB658D /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374251AF23BF5FA400EB658D /* LoginView.xib */; };
 		374251B223BF678900EB658D /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251B123BF678900EB658D /* TabBarViewModel.swift */; };
-		374251B423BF68B300EB658D /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374251B323BF68B300EB658D /* TabBarView.xib */; };
-		374251BB23BF767C00EB658D /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374251BA23BF767C00EB658D /* HomeView.xib */; };
 		374251BD23BF769900EB658D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251BC23BF769900EB658D /* HomeViewController.swift */; };
 		374251BF23BF76C200EB658D /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251BE23BF76C200EB658D /* HomeCoordinator.swift */; };
 		374251C123BF76D600EB658D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251C023BF76D600EB658D /* HomeViewModel.swift */; };
-		374251C323BF83BA00EB658D /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374251C223BF83BA00EB658D /* FirstView.xib */; };
 		374251C523BF83EF00EB658D /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251C423BF83EF00EB658D /* FirstViewModel.swift */; };
 		374251C823BF8F2A00EB658D /* UITabBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251C723BF8F2A00EB658D /* UITabBar+Extensions.swift */; };
 		374251CC23BFBA9000EB658D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374251CB23BFBA9000EB658D /* CustomView.swift */; };
@@ -80,16 +80,16 @@
 /* Begin PBXFileReference section */
 		3709C49123C2591500318809 /* Margins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margins.swift; sourceTree = "<group>"; };
 		3709C49323C25B5C00318809 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		3709C49523C26BDE00318809 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		3709C49723C26CAE00318809 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3709C49923C26F1B00318809 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3709C49B23C2740E00318809 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		374251AB23BE523500EB658D /* RequestLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoginUseCase.swift; sourceTree = "<group>"; };
 		374251AD23BE762E00EB658D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		374251AF23BF5FA400EB658D /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		374251B123BF678900EB658D /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
-		374251B323BF68B300EB658D /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
-		374251BA23BF767C00EB658D /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		374251BC23BF769900EB658D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		374251BE23BF76C200EB658D /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		374251C023BF76D600EB658D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		374251C223BF83BA00EB658D /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		374251C423BF83EF00EB658D /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 		374251C723BF8F2A00EB658D /* UITabBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extensions.swift"; sourceTree = "<group>"; };
 		374251CB23BFBA9000EB658D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		374251B923BF767100EB658D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				374251BA23BF767C00EB658D /* HomeView.xib */,
+				3709C49723C26CAE00318809 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,7 +233,6 @@
 		374251CA23BFBA7C00EB658D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				374251E623BFD94D00EB658D /* RoundShadowView.swift */,
 				374251CB23BFBA9000EB658D /* CustomView.swift */,
 				374251CE23BFBB0700EB658D /* CustomViewModel.swift */,
 			);
@@ -470,7 +469,7 @@
 		37F1D28623BE114900DC261C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				374251C223BF83BA00EB658D /* FirstView.xib */,
+				3709C49523C26BDE00318809 /* FirstView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -597,6 +596,8 @@
 				37F1D29B23BE256E00DC261C /* Button.swift */,
 				374251E423BFD93F00EB658D /* CardView.swift */,
 				374251E823BFDA5800EB658D /* ProgressBarView.swift */,
+				374251E623BFD94D00EB658D /* RoundShadowView.swift */,
+				3709C49B23C2740E00318809 /* LineView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -669,8 +670,8 @@
 		37F1D2AA23BE2D5F00DC261C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				37F1D2B923BE368700DC261C /* Scenes */,
 				37F1D2B823BE367F00DC261C /* Domain */,
+				37F1D2B923BE368700DC261C /* Scenes */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -706,7 +707,7 @@
 		37F1D2AF23BE2DD100DC261C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				374251AF23BF5FA400EB658D /* LoginView.xib */,
+				3709C49923C26F1B00318809 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -729,20 +730,11 @@
 		37F1D2BA23BE369600DC261C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				37F1D2BB23BE36A300DC261C /* View */,
 				37F1D2BE23BE36C200DC261C /* TabBarViewController.swift */,
 				37F1D2C023BE36CB00DC261C /* TabBarCoordinator.swift */,
 				374251B123BF678900EB658D /* TabBarViewModel.swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		37F1D2BB23BE36A300DC261C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				374251B323BF68B300EB658D /* TabBarView.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -849,13 +841,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374251BB23BF767C00EB658D /* HomeView.xib in Resources */,
 				37D0317823B1389A00BFC394 /* LaunchScreen.storyboard in Resources */,
 				37C8859023B84BC500277A3B /* Colors.xcassets in Resources */,
-				374251B423BF68B300EB658D /* TabBarView.xib in Resources */,
-				374251C323BF83BA00EB658D /* FirstView.xib in Resources */,
 				37D0317523B1389A00BFC394 /* Images.xcassets in Resources */,
-				374251B023BF5FA400EB658D /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,6 +875,7 @@
 				37D0317023B1389600BFC394 /* FirstViewController.swift in Sources */,
 				37C8859323B84D9600277A3B /* Colors.swift in Sources */,
 				374251E523BFD93F00EB658D /* CardView.swift in Sources */,
+				3709C49623C26BDE00318809 /* FirstView.swift in Sources */,
 				379F6ED923BA2A0D005ECA5F /* Loading.swift in Sources */,
 				37D0316C23B1389600BFC394 /* AppDelegate.swift in Sources */,
 				3709C49223C2591500318809 /* Margins.swift in Sources */,
@@ -895,12 +884,14 @@
 				374251BD23BF769900EB658D /* HomeViewController.swift in Sources */,
 				374251C823BF8F2A00EB658D /* UITabBar+Extensions.swift in Sources */,
 				379F6ED523BA27BF005ECA5F /* LoginService.swift in Sources */,
+				3709C49823C26CAE00318809 /* HomeView.swift in Sources */,
 				374251CF23BFBB0700EB658D /* CustomViewModel.swift in Sources */,
 				374251E223BFCB6000EB658D /* Environment.swift in Sources */,
 				374251D323BFBCE200EB658D /* UIView+Extensions.swift in Sources */,
 				37F1D29C23BE256E00DC261C /* Button.swift in Sources */,
 				37F1D2BF23BE36C200DC261C /* TabBarViewController.swift in Sources */,
 				37D031A323B13AD500BFC394 /* AppCoordinator.swift in Sources */,
+				3709C49C23C2740E00318809 /* LineView.swift in Sources */,
 				374251AC23BE523500EB658D /* RequestLoginUseCase.swift in Sources */,
 				374251DA23BFC99500EB658D /* ThirdViewController.swift in Sources */,
 				379F6ED223BA27B2005ECA5F /* AService.swift in Sources */,
@@ -908,6 +899,7 @@
 				37F1D2B523BE302600DC261C /* LoginCoordinator.swift in Sources */,
 				374251BF23BF76C200EB658D /* HomeCoordinator.swift in Sources */,
 				374251E923BFDA5800EB658D /* ProgressBarView.swift in Sources */,
+				3709C49A23C26F1B00318809 /* LoginView.swift in Sources */,
 				37F1D2C123BE36CC00DC261C /* TabBarCoordinator.swift in Sources */,
 				37F1D2B723BE355600DC261C /* FirstCoordinator.swift in Sources */,
 				374251D523BFC82800EB658D /* Fonts.swift in Sources */,

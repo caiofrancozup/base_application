@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class RoundShadowView: CustomView<RoundShadowView.Model> {
+class RoundShadowView: CustomView<RoundShadowView.Model> {
 
-    public struct Model: CustomViewModel {
+    struct Model: CustomViewModel {
         let subview: UIView
         let cornerRadius: CGFloat
         let margin: CGFloat

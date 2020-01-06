@@ -11,12 +11,17 @@ import UIKit
 final class LoginViewController: UIViewController {
     
     private let viewModel: LoginViewModel
+    private lazy var loginView: LoginView = {
+        let view = LoginView(model: nil)
+        view.delegate = self
+        return view
+    }()
     
     init(
         with viewModel: LoginViewModel
     ) {
         self.viewModel = viewModel
-        super.init(nibName: "LoginView", bundle: nil)
+        super.init(nibName: nil, bundle: nil)
     }
     
     @available(*, unavailable)
@@ -24,12 +29,21 @@ final class LoginViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func loadView() {
+        super.loadView()
+        view = loginView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    @IBAction private func loginTapped(_ sender: Any) {
+}
+
+extension LoginViewController: LoginViewDelegate {
+    
+    func loginButtonTapped() {
         viewModel.login()
     }
     

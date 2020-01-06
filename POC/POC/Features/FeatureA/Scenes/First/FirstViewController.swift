@@ -10,13 +10,18 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    private var viewModel: FirstViewModel?
+    private let viewModel: FirstViewModel?
+    private lazy var firstView: FirstView = {
+        let view = FirstView(model: nil)
+        view.delegate = self
+        return view
+    }()
 
     init(
         with viewModel: FirstViewModel
     ) {
         self.viewModel = viewModel
-        super.init(nibName: "FirstView", bundle: nil)
+        super.init(nibName: nil, bundle: nil)
     }
     
     @available(*, unavailable)
@@ -24,12 +29,21 @@ class FirstViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func loadView() {
+        super.loadView()
+        view = firstView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "First"
-        // Do any additional setup after loading the view.
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
 
+}
+
+extension FirstViewController: FirstViewDelegate {
+    
 }
 

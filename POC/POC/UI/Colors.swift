@@ -13,9 +13,11 @@ final class Colors {
     static let black = UIColor(from: "000000")
     static let white = UIColor(from: "FFFFFF")
     static let gray = UIColor(from: "C9C9C9")
-    static let green = UIColor(from: "63FF80")
+    static let lightGray = UIColor(from: "F4F5F9")
+    static let green = UIColor(from: "69CA66")
     static let orange = UIColor(from: "F8A14A")
-    static let blue = UIColor(from: "0C0F40")
+    static let red = UIColor(from: "FD6B65")
+    static let blue = UIColor(from: "0C1241")
     static let lightBlue = UIColor(from: "6392E9")
     
 }

@@ -30,16 +30,13 @@ final class TabBarViewModel {
     private weak var coordinator: Coordinator?
     private(set) var selectedTab: TabIndex = .home
     private(set) var tabBarControllers: [UIViewController]
-    private(set) var tabBarItems: [UITabBarItem]
     
     init(
         coordinator: Coordinator,
-        tabBarControllers: [UIViewController],
-        tabBarItems: [UITabBarItem]
+        tabBarControllers: [UIViewController]
     ) {
         self.coordinator = coordinator
         self.tabBarControllers = tabBarControllers
-        self.tabBarItems = tabBarItems
     }
     
     func selectTab(_ tabIndex: TabIndex) {
