@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol HomeViewDelegate: UserViewDelegate, AccountCardViewDelegate, CardCarouselViewDelegate, ShortcutsCarouselViewDelegate {
+protocol HomeViewDelegate: UserViewDelegate, AccountSummaryViewDelegate, CardCarouselViewDelegate, ShortcutsCarouselViewDelegate {
     
 }
 
@@ -39,14 +39,14 @@ class HomeView: CustomView<HomeView.Model?> {
     
     private lazy var contentView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .clear
         return view
     }()
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
             userView,
-//            accountCardView,
+            accountCardView,
             cardCarouselView,
             shortcutsCarouselView,
             bannerCardView
@@ -63,7 +63,7 @@ class HomeView: CustomView<HomeView.Model?> {
     }()
     
     private lazy var accountCardView: RoundShadowView = {
-        let view = RoundShadowView(model: RoundShadowView.Model(subview: AccountCardView(model: nil)))
+        let view = RoundShadowView(model: RoundShadowView.Model(subview: AccountSummaryView(model: nil)))
         return view
     }()
     
@@ -129,115 +129,6 @@ class HomeView: CustomView<HomeView.Model?> {
         super.didUpdateModel()
         backgroundColor = Colors.white
     }
-}
-
-protocol AccountCardViewDelegate: class {
-    
-}
-
-class AccountCardView: CustomView<AccountCardView.Model?> {
-    
-    struct Model: CustomViewModel {
-        
-    }
-    
-    weak var delegate: AccountCardViewDelegate?
-    
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Blablabla"
-        return label
-    }()
-    
-    private lazy var valueLabel: UILabel = {
-        let label = UILabel()
-        label.text = "tttt"
-        return label
-    }()
-    
-    private lazy var detailsButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("DETAILS", for: .normal)
-        button.setTitleColor(Colors.lightBlue, for: .normal)
-        return button
-    }()
-    
-    private lazy var textContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .gray
-        return view
-    }()
-    
-    private lazy var contentView: UIView = {
-        let view = UIView()
-        view.backgroundColor = Colors.blue
-        return view
-    }()
-    
-    override func addSubViews() {
-        super.addSubViews()
-        addSubview(contentView)
-        contentView.addSubview(textContainerView)
-        contentView.addSubview(detailsButton)
-        textContainerView.addSubview(titleLabel)
-        textContainerView.addSubview(valueLabel)
-    }
-    
-    override func setupConstraints() {
-        super.setupConstraints()
-        
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.anchorToSuperview(topConstant: Margins.default,
-                                      leftConstant: Margins.default,
-                                      bottomConstant: Margins.default,
-                                      rightConstant: Margins.default)
-        
-        textContainerView.translatesAutoresizingMaskIntoConstraints = false
-        textContainerView.anchorMargins(top: contentView.top,
-                                        left: contentView.left,
-                                        bottom: contentView.bottom,
-                                        topConstant: Margins.default,
-                                        leftConstant: Margins.default,
-                                        bottomConstant: Margins.default)
-
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.anchorMargins(top: textContainerView.top,
-                                 left: textContainerView.left,
-                                 right: textContainerView.right,
-                                 topConstant: Margins.zero,
-                                 leftConstant: Margins.zero,
-                                 rightConstant: Margins.zero)
-
-        valueLabel.translatesAutoresizingMaskIntoConstraints = false
-        valueLabel.anchorMargins(top: titleLabel.bottom,
-                                 left: textContainerView.left,
-                                 bottom: textContainerView.bottom,
-                                 right: textContainerView.right,
-                                 topConstant: Margins.zero,
-                                 leftConstant: Margins.zero,
-                                 bottomConstant: Margins.zero,
-                                 rightConstant: Margins.zero)
-        
-        detailsButton.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addConstraints([
-            detailsButton.leftAnchor.constraint(equalTo: textContainerView.rightAnchor, constant: Margins.default),
-            detailsButton.topAnchor.constraint(greaterThanOrEqualTo: contentView.topAnchor, constant: Margins.default),
-            detailsButton.bottomAnchor.constraint(greaterThanOrEqualTo: contentView.bottomAnchor, constant: -Margins.default),
-            detailsButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -Margins.default),
-            detailsButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-        ])
-        
-        titleLabel.setContentHuggingPriority(.defaultLow, for: .vertical)
-        valueLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
-        detailsButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        textContainerView.setContentHuggingPriority(.defaultLow, for: .horizontal)
-    }
-    
-    override func didUpdateModel() {
-        super.didUpdateModel()
-        backgroundColor = .white
-    }
-    
 }
 
 protocol CardCarouselViewDelegate: class {

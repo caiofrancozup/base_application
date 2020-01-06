@@ -28,7 +28,7 @@ final class TabBarViewModel {
     }
     
     private weak var coordinator: Coordinator?
-    private(set) var selectedTab: TabIndex = .featureA
+    private(set) var selectedTab: TabIndex = .home
     private(set) var tabBarControllers: [UIViewController]
     
     init(

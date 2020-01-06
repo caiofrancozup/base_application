@@ -40,12 +40,14 @@ class FirstView: CustomView<FirstView.Model?> {
         super.setupConstraints()
         translatesAutoresizingMaskIntoConstraints = true
         
+        bannerCardView.translatesAutoresizingMaskIntoConstraints = false
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
         bannerCardView.anchorMargins(top: top,
                                      left: left,
                                      right: right,
-                                     topConstant: 20,
-                                     leftConstant: 20,
-                                     rightConstant: 20)
+                                     topConstant: 0,
+                                     leftConstant: 0,
+                                     rightConstant: 0)
         bannerCardView.heightAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
