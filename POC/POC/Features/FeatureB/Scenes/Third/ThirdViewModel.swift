@@ -21,12 +21,16 @@ final class ThirdViewModel {
     func getModel() -> ThirdView.Model {
         let progress = CGFloat(Double.random(in: 0.0..<1.0))
         let progressValueText = "\(progress)"
-        return ThirdView.Model(progress: progress,
+        return ThirdView.Model(progressBarViewModel: ProgressBarView.Model(progress: progress),
                                progressValueText: progressValueText)
     }
     
     func closeFeature() {
         coordinator.finish()        
+    }
+    
+    func nextScene() {
+        coordinator.next()
     }
     
 }

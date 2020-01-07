@@ -37,7 +37,7 @@ class CardsCarouselView: CustomView<CardsCarouselView.Model?>, UICollectionViewD
     private lazy var carouselCollectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: 300, height: 180)
+        layout.itemSize = CGSize(width: 300, height: 170)
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
@@ -70,7 +70,7 @@ class CardsCarouselView: CustomView<CardsCarouselView.Model?>, UICollectionViewD
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.anchorToSuperview()
         
-        carouselCollectionView.anchorSize(height: 195)
+        carouselCollectionView.anchorSize(height: 185)
     }
     
     override func didUpdateModel() {

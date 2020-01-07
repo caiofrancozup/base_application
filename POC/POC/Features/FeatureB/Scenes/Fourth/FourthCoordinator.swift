@@ -1,20 +1,19 @@
 //
-//  ThirdCoordinator.swift
+//  FourthCoordinator.swift
 //  POC
 //
-//  Created by Bruno Vieira on 03/01/20.
+//  Created by Bruno Vieira on 07/01/20.
 //  Copyright © 2020 Bruno Vieira. All rights reserved.
 //
 
 import UIKit
 
-class ThirdCoordinator: Coordinator {
-    
+class FourthCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     var childCoordinators: [String : Coordinator]
     
-    weak var parentCoordinator: Coordinator?
+    var parentCoordinator: Coordinator?
     
     init(
         navigationController: UINavigationController,
@@ -26,19 +25,9 @@ class ThirdCoordinator: Coordinator {
     }
     
     func start() {
-        let viewModel = ThirdViewModel(coordinator: self)
-        let viewController = ThirdViewController(with: viewModel)
+        let viewModel = FourthViewModel(coordinator: self)
+        let viewController = FourthViewController(with: viewModel)
         navigationController.pushViewController(viewController, animated: true)
-    }
-    
-    func finish() {
-        parentCoordinator?.finish()
-    }
-    
-    func next() {
-        let coordinator = FourthCoordinator(navigationController: navigationController,
-                                            parentCoordinator: self)
-        coordinator.start()
     }
     
     

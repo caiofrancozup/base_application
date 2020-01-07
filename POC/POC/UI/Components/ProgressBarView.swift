@@ -21,7 +21,6 @@ class ProgressBarView: CustomView<ProgressBarView.Model?> {
     
     override func didUpdateModel() {
         super.didUpdateModel()
-        translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .clear
         createProgressPath()
     }

@@ -44,10 +44,12 @@ final class ThirdViewController: UIViewController {
 extension ThirdViewController: ThirdViewDelegate {
     
     func logoutButtonTapped() {
-        viewModel.closeFeature()
+//        viewModel.closeFeature()
+        viewModel.nextScene()
     }
     
     func progressButtonTapped() {
-        thirdView.model = viewModel.getModel()
+        let thirdViewModel = viewModel.getModel()
+        thirdView.model = thirdViewModel
     }
 }

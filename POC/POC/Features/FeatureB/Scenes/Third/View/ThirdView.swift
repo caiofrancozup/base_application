@@ -18,7 +18,7 @@ class ThirdView: CustomView<ThirdView.Model?> {
     weak var delegate: ThirdViewDelegate?
     
     struct Model: CustomViewModel {
-        let progress: CGFloat
+        let progressBarViewModel: ProgressBarView.Model
         let progressValueText: String
     }
     
@@ -91,7 +91,7 @@ class ThirdView: CustomView<ThirdView.Model?> {
         super.didUpdateModel()
         backgroundColor = Colors.green
         guard let model = model else { return }
-        progressBarView.model = ProgressBarView.Model(progress: model.progress)
+        progressBarView.model = model.progressBarViewModel
         progressValueLabel.text = model.progressValueText
     }
     

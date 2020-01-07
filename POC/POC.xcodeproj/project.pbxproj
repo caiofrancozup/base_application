@@ -49,7 +49,10 @@
 		37AAC98A23C3A21400E4FD15 /* ShortcutCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98923C3A21400E4FD15 /* ShortcutCollectionCell.swift */; };
 		37AAC98F23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC98E23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift */; };
 		37AAC99123C3A8C500E4FD15 /* CardsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC99023C3A8C500E4FD15 /* CardsCarouselView.swift */; };
-		37C8859023B84BC500277A3B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C8858F23B84BC500277A3B /* Colors.xcassets */; };
+		37AAC99523C5026B00E4FD15 /* FourthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC99423C5026B00E4FD15 /* FourthViewModel.swift */; };
+		37AAC99723C5027200E4FD15 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC99623C5027200E4FD15 /* FourthViewController.swift */; };
+		37AAC99A23C5027B00E4FD15 /* FourthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC99923C5027B00E4FD15 /* FourthCoordinator.swift */; };
+		37AAC99C23C5028300E4FD15 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAC99B23C5028300E4FD15 /* FourthView.swift */; };
 		37C8859323B84D9600277A3B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8859223B84D9600277A3B /* Colors.swift */; };
 		37C8859523B84EF000277A3B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8859423B84EF000277A3B /* Images.swift */; };
 		37C8859723B8550A00277A3B /* ImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8859623B8550A00277A3B /* ImagesTests.swift */; };
@@ -131,7 +134,10 @@
 		37AAC98923C3A21400E4FD15 /* ShortcutCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutCollectionCell.swift; sourceTree = "<group>"; };
 		37AAC98E23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsCarouselView.swift; sourceTree = "<group>"; };
 		37AAC99023C3A8C500E4FD15 /* CardsCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCarouselView.swift; sourceTree = "<group>"; };
-		37C8858F23B84BC500277A3B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		37AAC99423C5026B00E4FD15 /* FourthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewModel.swift; sourceTree = "<group>"; };
+		37AAC99623C5027200E4FD15 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		37AAC99923C5027B00E4FD15 /* FourthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCoordinator.swift; sourceTree = "<group>"; };
+		37AAC99B23C5028300E4FD15 /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
 		37C8859223B84D9600277A3B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		37C8859423B84EF000277A3B /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		37C8859623B8550A00277A3B /* ImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTests.swift; sourceTree = "<group>"; };
@@ -289,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				37D0317423B1389A00BFC394 /* Images.xcassets */,
-				37C8858F23B84BC500277A3B /* Colors.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -440,6 +445,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		37AAC99323C5025B00E4FD15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37AAC99B23C5028300E4FD15 /* FourthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		37C8859123B84D7300277A3B /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,8 +461,6 @@
 				37C8859223B84D9600277A3B /* Colors.swift */,
 				374251D423BFC82800EB658D /* Fonts.swift */,
 				37C8859423B84EF000277A3B /* Images.swift */,
-				379F6EBC23BA25CF005ECA5F /* Alert.swift */,
-				379F6ED823BA2A0D005ECA5F /* Loading.swift */,
 				3709C49123C2591500318809 /* Margins.swift */,
 				3709C49323C25B5C00318809 /* Sizes.swift */,
 			);
@@ -559,6 +570,10 @@
 		37F1D28723BE115F00DC261C /* Fourth */ = {
 			isa = PBXGroup;
 			children = (
+				37AAC99323C5025B00E4FD15 /* View */,
+				37AAC99423C5026B00E4FD15 /* FourthViewModel.swift */,
+				37AAC99623C5027200E4FD15 /* FourthViewController.swift */,
+				37AAC99923C5027B00E4FD15 /* FourthCoordinator.swift */,
 			);
 			path = Fourth;
 			sourceTree = "<group>";
@@ -678,13 +693,15 @@
 				37AAC97D23C3819B00E4FD15 /* CollectionView */,
 				37AAC97C23C3819400E4FD15 /* TableView */,
 				37AAC98023C381B200E4FD15 /* View */,
+				37AAC97623C3599E00E4FD15 /* AccountSummaryView.swift */,
+				379F6EBC23BA25CF005ECA5F /* Alert.swift */,
 				37F1D29B23BE256E00DC261C /* Button.swift */,
 				374251E423BFD93F00EB658D /* CardView.swift */,
 				3709C49B23C2740E00318809 /* LineView.swift */,
+				379F6ED823BA2A0D005ECA5F /* Loading.swift */,
 				374251E823BFDA5800EB658D /* ProgressBarView.swift */,
 				374251E623BFD94D00EB658D /* RoundShadowView.swift */,
 				3709C4A123C2D73900318809 /* UserView.swift */,
-				37AAC97623C3599E00E4FD15 /* AccountSummaryView.swift */,
 				37AAC97823C378CF00E4FD15 /* SectionHeaderView.swift */,
 				37AAC97A23C380D600E4FD15 /* ShortcutView.swift */,
 			);
@@ -931,7 +948,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D0317823B1389A00BFC394 /* LaunchScreen.storyboard in Resources */,
-				37C8859023B84BC500277A3B /* Colors.xcassets in Resources */,
 				37D0317523B1389A00BFC394 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -967,10 +983,12 @@
 				3709C49623C26BDE00318809 /* FirstView.swift in Sources */,
 				379F6ED923BA2A0D005ECA5F /* Loading.swift in Sources */,
 				37D0316C23B1389600BFC394 /* AppDelegate.swift in Sources */,
+				37AAC99723C5027200E4FD15 /* FourthViewController.swift in Sources */,
 				3709C49223C2591500318809 /* Margins.swift in Sources */,
 				374251C523BF83EF00EB658D /* FirstViewModel.swift in Sources */,
 				37D0319E23B139B900BFC394 /* Coordinator.swift in Sources */,
 				374251BD23BF769900EB658D /* HomeViewController.swift in Sources */,
+				37AAC99A23C5027B00E4FD15 /* FourthCoordinator.swift in Sources */,
 				374251C823BF8F2A00EB658D /* UITabBar+Extensions.swift in Sources */,
 				379F6ED523BA27BF005ECA5F /* LoginService.swift in Sources */,
 				3709C49823C26CAE00318809 /* HomeView.swift in Sources */,
@@ -989,6 +1007,7 @@
 				379F6ED223BA27B2005ECA5F /* AService.swift in Sources */,
 				3709C4A223C2D73900318809 /* UserView.swift in Sources */,
 				379F6EBD23BA25CF005ECA5F /* Alert.swift in Sources */,
+				37AAC99C23C5028300E4FD15 /* FourthView.swift in Sources */,
 				37F1D2B523BE302600DC261C /* LoginCoordinator.swift in Sources */,
 				374251BF23BF76C200EB658D /* HomeCoordinator.swift in Sources */,
 				374251E923BFDA5800EB658D /* ProgressBarView.swift in Sources */,
@@ -998,6 +1017,7 @@
 				37F1D2B723BE355600DC261C /* FirstCoordinator.swift in Sources */,
 				374251D523BFC82800EB658D /* Fonts.swift in Sources */,
 				37AAC99123C3A8C500E4FD15 /* CardsCarouselView.swift in Sources */,
+				37AAC99523C5026B00E4FD15 /* FourthViewModel.swift in Sources */,
 				374251CC23BFBA9000EB658D /* CustomView.swift in Sources */,
 				374251C123BF76D600EB658D /* HomeViewModel.swift in Sources */,
 				37AAC98F23C3A8BA00E4FD15 /* ShortcutsCarouselView.swift in Sources */,
