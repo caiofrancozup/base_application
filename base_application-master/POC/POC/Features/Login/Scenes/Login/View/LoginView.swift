@@ -23,9 +23,13 @@ class LoginView: CustomView<LoginView.Model?> {
     }()
     
     private lazy var backgroundView: CustomBackgroundView = {
-        let background = CustomBackgroundView(model: CustomBackgroundView.Model(
-                backgroundColorTriangle: Colors.red,
-                backgroundColorRectangle: Colors.orange))
+        let background = CustomBackgroundView(model:
+            CustomBackgroundView.Model(
+                backgroundGradientStartTriangle: Colors.green,
+                backgroundGradientFinishTriangle: Colors.lightBlue,
+                backgroundGradientStartRectangle: Colors.blue,
+                backgroundGradientFinishRectangle: Colors.lightBlue)
+        )
         return background
     }()
     
