@@ -15,6 +15,7 @@ final class LoginViewController: UIViewController {
     private let viewModel: LoginViewModel
     private lazy var loginView: LoginView = {
         let view = LoginView(model: nil)
+        view.delegate = self
         return view
     }()
     

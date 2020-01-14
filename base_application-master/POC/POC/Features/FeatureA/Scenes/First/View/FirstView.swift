@@ -56,4 +56,6 @@ class FirstView: CustomView<FirstView.Model?> {
         backgroundColor = Colors.lightBlue
     }
     
+    
+    
 }

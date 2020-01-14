@@ -72,6 +72,7 @@
 		37F1D2BF23BE36C200DC261C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1D2BE23BE36C200DC261C /* TabBarViewController.swift */; };
 		37F1D2C123BE36CC00DC261C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1D2C023BE36CB00DC261C /* TabBarCoordinator.swift */; };
 		37F1D2C323BE4AD600DC261C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1D2C223BE4AD600DC261C /* LoginViewModel.swift */; };
+		FC22DD3223CD1C1A0070F3D5 /* CustomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22DD3123CD1C1A0070F3D5 /* CustomBackground.swift */; };
 		FC9449F723C918F9001FE7F3 /* SwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9449F623C918F9001FE7F3 /* SwitchButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +165,7 @@
 		37F1D2BE23BE36C200DC261C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		37F1D2C023BE36CB00DC261C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		37F1D2C223BE4AD600DC261C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FC22DD3123CD1C1A0070F3D5 /* CustomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackground.swift; sourceTree = "<group>"; };
 		FC9449F623C918F9001FE7F3 /* SwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -817,6 +819,7 @@
 			isa = PBXGroup;
 			children = (
 				3709C49923C26F1B00318809 /* LoginView.swift */,
+				FC22DD3123CD1C1A0070F3D5 /* CustomBackground.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -992,6 +995,7 @@
 				37D0319E23B139B900BFC394 /* Coordinator.swift in Sources */,
 				374251BD23BF769900EB658D /* HomeViewController.swift in Sources */,
 				37AAC99A23C5027B00E4FD15 /* FourthCoordinator.swift in Sources */,
+				FC22DD3223CD1C1A0070F3D5 /* CustomBackground.swift in Sources */,
 				374251C823BF8F2A00EB658D /* UITabBar+Extensions.swift in Sources */,
 				379F6ED523BA27BF005ECA5F /* LoginService.swift in Sources */,
 				3709C49823C26CAE00318809 /* HomeView.swift in Sources */,

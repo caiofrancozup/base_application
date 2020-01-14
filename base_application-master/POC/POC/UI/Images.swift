@@ -11,7 +11,7 @@ import UIKit
 enum Images: String, CaseIterable {
     
     case arrow
-    case logo
+    case image
     case placeholder
     
 }
